@@ -67,7 +67,7 @@ export default function SignUpPage() {
   return (
     <>
       <Helmet>
-        <title>Sign Up - Layoute</title>
+        <title>Sign Up - Loyaute</title>
       </Helmet>
 
       <Stack

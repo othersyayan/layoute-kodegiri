@@ -4,4 +4,7 @@ export const paths = {
     register: '/auth/sign-up',
     otp_verification: '/auth/otp-verification',
   },
+  dashboard: {
+    home: '/home',
+  },
 };

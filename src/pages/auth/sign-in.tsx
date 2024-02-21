@@ -35,14 +35,10 @@ export default function SignInPage() {
     event.preventDefault();
   };
 
-  const handleSubmit = () => {
-    console.log(email, password);
-  };
-
   return (
     <>
       <Helmet>
-        <title>Sign In - Layoute</title>
+        <title>Sign In - Loyaute</title>
       </Helmet>
 
       <Stack
@@ -155,7 +151,7 @@ export default function SignInPage() {
           fullWidth
           size="large"
           sx={{ textTransform: 'capitalize' }}
-          onClick={handleSubmit}
+          onClick={() => navigate(paths.dashboard.home)}
         >
           Sign In
         </Button>

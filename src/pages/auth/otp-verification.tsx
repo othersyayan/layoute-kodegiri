@@ -8,7 +8,7 @@ import { Box, Stack, Button, Typography } from '@mui/material';
 
 import { MuiOtpInput } from 'mui-one-time-password-input';
 
-// import { paths } from '../../routes/paths';
+import { paths } from '../../routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ export default function OTPVerificationPage() {
   return (
     <>
       <Helmet>
-        <title>OTP Verification - Layoute</title>
+        <title>OTP Verification - Loyaute</title>
       </Helmet>
 
       <Stack
@@ -65,6 +65,7 @@ export default function OTPVerificationPage() {
           length={4}
           autoFocus
           sx={{ maxWidth: '90%' }}
+          validateChar={(val) => !isNaN(Number(val))}
         />
 
         <Box
@@ -100,7 +101,7 @@ export default function OTPVerificationPage() {
           size="large"
           sx={{ textTransform: 'capitalize' }}
           disabled={otp === ''}
-          onClick={() => navigate('/')}
+          onClick={() => navigate(paths.dashboard.home)}
         >
           Submit
         </Button>
